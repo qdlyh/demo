@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>慈园阁 订购中心</title>
+<meta name="Author" content="QQ407898830">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/order.js"></script>
+<script type="text/javascript" src="diqu(1).js" charset="utf-8"></script>
+<script type="text/javascript" src="notorder.js" charset="utf-8"></script>
+<link href="style(1).css" type="text/css" rel="stylesheet">
+<style type="text/css">
+    #order{width:100%;background:#FFF0F0;}
+    .title,.subbox input{background:#FF6666;}
+</style>
+<link href="../css/style(1).css" type="text/css" rel="stylesheet">
+<script>document.title="慈园阁 订购中心";</script>
+</head>
+<body>
+<div id="order">
+  <div class="warp">
+    <form id="form" name="form" method="post" action="pcToMS.asp" onSubmit="return postcheck()" target="_parent">
+      <div class="title">在线奉请</div>
+      <div style="padding-left:10px;max-width:640px;margin:0px auto;padding-bottom:10px;"> </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>选择产品</label>
+        <div class="dxbox red">
+          <input type="hidden" id="xzlx" value="1">
+          <input type="radio" name="product" id="a1" value="黑曜石吊坠188元" alt="188" onClick="pricea()" checked="">
+          <label for="a1">黑曜石吊坠&nbsp;&nbsp;188元</label>
+          <br>
+          <input type="radio" name="product" id="a2" value="冰种黑曜石288元" alt="288" onClick="pricea()">
+          <label for="a2">冰种黑曜石&nbsp;&nbsp;288元</label>
+          <br>
+          <input type="radio" name="product" id="a3" value="红玛瑙吊坠388元" alt="388" onClick="pricea()">
+          <label for="a3">红玛瑙吊坠&nbsp;&nbsp;388元</label>
+          <br>
+          <input type="radio" name="product" id="a4" value="白玛瑙吊坠388元" alt="388" onClick="pricea()">
+          <label for="a4">白玛瑙吊坠&nbsp;&nbsp;388元</label>
+          <br>
+          <input type="radio" name="product" id="a5" value="和田玉吊坠988元" alt="988" onClick="pricea()">
+          <label for="a5">和田玉吊坠&nbsp;&nbsp;988元</label>
+          <br>
+          <input type="radio" name="product" id="a6" value="聚财冰种貔貅手串（女款：12mm）188元" alt="188" onClick="pricea()">
+          <label for="a6">聚财冰种貔貅手串（女款：12mm）&nbsp;&nbsp;188元</label>
+          <br>
+          <input type="radio" name="product" id="a7" value="聚财冰种貔貅手串（男款：14mm）188元" alt="188" onClick="pricea()">
+          <label for="a7">聚财冰种貔貅手串（男款：14mm）&nbsp;&nbsp;188元</label>
+          <br>
+        </div>
+      </div>
+      <!--附加属性b-->
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>属相</label>
+        <div class="dxbox red">
+          <label>
+          <input type="radio" name="chanpin1" value="千手观音 （鼠）" checked="">
+          &nbsp;&nbsp;千手观音 （鼠）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="虚空藏菩萨（牛）">
+          &nbsp;&nbsp;虚空藏菩萨（牛）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="虚空藏菩萨（虎）">
+          &nbsp;&nbsp;虚空藏菩萨（虎）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="文殊菩萨 （兔）">
+          &nbsp;&nbsp;文殊菩萨 （兔）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="普贤菩萨 （龙）">
+          &nbsp;&nbsp;普贤菩萨 （龙）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="普贤菩萨 （蛇）">
+          &nbsp;&nbsp;普贤菩萨 （蛇）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="大势至菩萨（马）">
+          &nbsp;&nbsp;大势至菩萨（马）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="大日如来 （羊）">
+          &nbsp;&nbsp;大日如来 （羊）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="大日如来 （猴）">
+          &nbsp;&nbsp;大日如来 （猴）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="不动尊菩萨（鸡）">
+          &nbsp;&nbsp;不动尊菩萨（鸡）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="阿弥陀佛 （狗）">
+          &nbsp;&nbsp;阿弥陀佛 （狗）</label>
+          <br>
+          <label>
+          <input type="radio" name="chanpin1" value="阿弥陀佛 （猪）">
+          &nbsp;&nbsp;阿弥陀佛 （猪）</label>
+          <br>
+        </div>
+      </div>
+      <!--附加属性e-->
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>数量</label>
+        <div class="text3box">
+          <input type="text" name="mun" value="1" onChange="pricea()">
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>您的姓名</label>
+        <div class="textbox">
+          <input type="text" name="name">
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>手机号码</label>
+        <div class="textbox">
+          <input type="text" name="mob">
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>所在地区</label>
+        <div class="xlbox">
+          <select name="province" class="dqxl">
+            <option value="">选省份</option>
+            <option value="北京市">北京市</option>
+            <option value="天津市">天津市</option>
+            <option value="河北省">河北省</option>
+            <option value="山西省">山西省</option>
+            <option value="内蒙古自治区">内蒙古自治区</option>
+            <option value="辽宁省">辽宁省</option>
+            <option value="吉林省">吉林省</option>
+            <option value="黑龙江省">黑龙江省</option>
+            <option value="上海市">上海市</option>
+            <option value="江苏省">江苏省</option>
+            <option value="浙江省">浙江省</option>
+            <option value="安徽省">安徽省</option>
+            <option value="福建省">福建省</option>
+            <option value="江西省">江西省</option>
+            <option value="山东省">山东省</option>
+            <option value="河南省">河南省</option>
+            <option value="湖北省">湖北省</option>
+            <option value="湖南省">湖南省</option>
+            <option value="广东省">广东省</option>
+            <option value="广西壮族自治区">广西壮族自治区</option>
+            <option value="海南省">海南省</option>
+            <option value="重庆市">重庆市</option>
+            <option value="四川省">四川省</option>
+            <option value="贵州省">贵州省</option>
+            <option value="云南省">云南省</option>
+            <option value="西藏自治区">西藏自治区</option>
+            <option value="陕西省">陕西省</option>
+            <option value="甘肃省">甘肃省</option>
+            <option value="青海省">青海省</option>
+            <option value="宁夏回族自治区">宁夏回族自治区</option>
+            <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+            <option value="香港特别行政区">香港特别行政区</option>
+            <option value="澳门特别行政区">澳门特别行政区</option>
+            <option value="台湾省">台湾省</option>
+          </select>
+          <select name="city" class="dqxl">
+            <option value="">选城市</option>
+          </select>
+          <select name="area" class="dqxl">
+            <option value="">选地区</option>
+          </select>
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>详细地址</label>
+        <div class="textbox">
+          <input type="text" name="address">
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>支付金额</label>
+        <div class="text3box">
+          <input type="hidden" name="zfbprice" value="188">
+          <input name="price" value="188" readonly="">
+          元 <span id="zfbyh"></span> </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx"><em>*</em>付款方式</label>
+        <div class="dxbox">
+          <input type="radio" checked="checked" name="pay" id="b1" value="cod" onClick="return changeItem(0);">
+          <label for="b1"><img src="hdfk.gif"></label>
+          <br>
+        </div>
+      </div>
+      <div class="bdbox">
+        <label class="bdxx">留言</label>
+        <div class="text2box">
+          <textarea name="guest" placeholder="请确认地址完整。奉请2尊以上请留言说明。"></textarea>
+        </div>
+      </div>
+      <script>getfrom();</script>
+      <div class="subbox">
+        <input type="submit" name="submit" value="立即提交订单">
+      </div>
+    </form>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<script>
+var quotes=new Array("黑曜石吊坠","冰种黑曜石","红玛瑙吊坠","白玛瑙吊坠","和田玉吊坠","聚财冰种貔貅手串（女款：12mm）","聚财冰种貔貅手串（男款：14mm）");
+</script>
+<div id="fahuo">
+  <p><span>[最新购买]：</span>张**（151****2588）在4分钟前订购了白玛瑙吊坠 <font color="#FF0000">√</font></p>
+  <p><span>[最新购买]：</span>王**（133****4096）在6分钟前订购了聚财冰种貔貅手串（女款：12mm） <font color="#FF0000">√</font></p>
+</div>
+<script type="text/javascript" src="fahuo(1).js"></script>
+</body>
+</html>
